@@ -1,0 +1,4 @@
+GrabHelper.version=1.0
+GrabHelper.path=/files/GrabHelper/1.0/GrabHelper.dat
+Grab.version=1.0
+Grab.path=/files/Grab/1.0/Grab.dat

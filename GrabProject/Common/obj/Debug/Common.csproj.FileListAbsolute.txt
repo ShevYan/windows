@@ -1,0 +1,8 @@
+C:\windows_projects\windows\GrabProject\Common\bin\Debug\Common.dll
+C:\windows_projects\windows\GrabProject\Common\bin\Debug\Common.pdb
+C:\windows_projects\windows\GrabProject\Common\obj\Debug\Common.dll
+C:\windows_projects\windows\GrabProject\Common\obj\Debug\Common.pdb
+C:\windows_projects\windows\GrabProject\bin\Common.dll
+C:\windows_projects\windows\GrabProject\bin\Common.pdb
+C:\windows_projects\windows\GrabProject\bin\Common\Common.dll
+C:\windows_projects\windows\GrabProject\bin\Common\Common.pdb
