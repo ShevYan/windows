@@ -50,7 +50,7 @@ namespace GrabHelper
 	            foreach (string file in exFiles)
 	            {
 	                byte[] data = System.IO.File.ReadAllBytes(file);
-	                NetworkHelper.GetInstance().HttpRequest("/upload_exception", "POST", data);
+                    NetworkHelper.GetInstance().HttpRequest("/upload_exception", "POST", data, Encoding.UTF8);
 	                System.IO.File.Delete(file);
 	            }
 	

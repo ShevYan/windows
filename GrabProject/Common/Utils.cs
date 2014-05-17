@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO.Compression;
+using System.Runtime.InteropServices;
 
 namespace Common
 {
@@ -19,6 +20,7 @@ namespace Common
            
         }
 
+        public static DateTime UTCZero = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         public static void ArchiveFiles(LinkedList<string> files, string baseDir, string target)
         {
             if (File.Exists(target)) {
@@ -69,6 +71,43 @@ namespace Common
             return System.Environment.CurrentDirectory;
         }
 
+        public static string EncodingConvert(string fromString, Encoding fromEncoding, Encoding toEncoding)
+        {
+            byte[] fromBytes = fromEncoding.GetBytes(fromString);
+            byte[] toBytes = Encoding.Convert(fromEncoding, toEncoding, fromBytes);
+
+            string toString = toEncoding.GetString(toBytes);
+            return toString;
+        }
+
+        public static string GBKToUtf8(string gbkString)
+        {
+            Encoding fromEncoding = Encoding.GetEncoding("GBK");
+            Encoding toEncoding = Encoding.UTF8;
+            return EncodingConvert(gbkString, fromEncoding, toEncoding);
+        }
+
+        public static string Utf8ToGBK(string utf8String)
+        {
+            Encoding fromEncoding = Encoding.UTF8;
+            Encoding toEncoding = Encoding.GetEncoding("GBK");
+            return EncodingConvert(utf8String, fromEncoding, toEncoding);
+        }
+
+        public static string GetMiddleString(string org, string left, string right)
+        {
+            int start = org.IndexOf(left);
+            if (start == -1) {
+                throw new ArgumentOutOfRangeException();
+            }
+            start += left.Length;
+            int end = org.IndexOf(right, start);
+            if (end == -1) {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            return org.Substring(start, end - start);
+        }
 
         ///////////Test
         public static void TestArchive()

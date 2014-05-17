@@ -28,103 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.usernameText = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.passwdText = new System.Windows.Forms.TextBox();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.okBtn = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // groupBox1
             // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 66);
-            this.panel1.TabIndex = 2;
+            this.groupBox1.Controls.Add(this.usernameText);
+            this.groupBox1.Location = new System.Drawing.Point(7, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(205, 59);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "用户名";
             // 
-            // label1
+            // usernameText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "线程数：";
+            this.usernameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.usernameText.Location = new System.Drawing.Point(7, 20);
+            this.usernameText.Name = "usernameText";
+            this.usernameText.Size = new System.Drawing.Size(192, 30);
+            this.usernameText.TabIndex = 0;
             // 
-            // textBox1
+            // groupBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(55, 20);
-            this.textBox1.TabIndex = 1;
+            this.groupBox2.Controls.Add(this.passwdText);
+            this.groupBox2.Location = new System.Drawing.Point(7, 73);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(205, 59);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "密码";
             // 
-            // label2
+            // passwdText
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(144, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "(example: 1)";
+            this.passwdText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.passwdText.Location = new System.Drawing.Point(7, 19);
+            this.passwdText.Name = "passwdText";
+            this.passwdText.PasswordChar = '*';
+            this.passwdText.Size = new System.Drawing.Size(192, 30);
+            this.passwdText.TabIndex = 0;
+            this.passwdText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwdBtn_KeyDown);
             // 
-            // label3
+            // cancelBtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(335, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "延时：";
+            this.cancelBtn.Location = new System.Drawing.Point(87, 136);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(59, 23);
+            this.cancelBtn.TabIndex = 3;
+            this.cancelBtn.Text = "取消";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
-            // textBox2
+            // okBtn
             // 
-            this.textBox2.Location = new System.Drawing.Point(384, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(55, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(463, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "(抢单最小延时)";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.okBtn.Location = new System.Drawing.Point(152, 136);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(54, 23);
+            this.okBtn.TabIndex = 2;
+            this.okBtn.Text = "确定";
+            this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // OptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 536);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(224, 171);
+            this.Controls.Add(this.okBtn);
+            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "OptionForm";
-            this.Text = "设置";
+            this.Text = "淘宝用户信息";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.OptionForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox usernameText;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox passwdText;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button okBtn;
+
     }
 }

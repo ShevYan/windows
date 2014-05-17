@@ -1,0 +1,8 @@
+C:\windows_projects\windows\GrabProject\bin\GrabHelper\GrabHelper.exe
+C:\windows_projects\windows\GrabProject\bin\GrabHelper\GrabHelper.pdb
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.csprojResolveAssemblyReference.cache
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.MainForm.resources
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.Properties.Resources.resources
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.csproj.GenerateResource.Cache
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.exe
+C:\windows_projects\windows\GrabProject\GrabHelper\obj\x86\Release\GrabHelper.pdb

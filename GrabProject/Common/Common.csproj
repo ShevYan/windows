@@ -38,8 +38,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncHttpWebRequest.cs" />
     <Compile Include="Crypto.cs" />
     <Compile Include="ExceptionHanlder.cs" />
+    <Compile Include="FullWebBrowserCookie.cs" />
     <Compile Include="GrabConfig.cs" />
     <Compile Include="Hardware.cs" />
     <Compile Include="NetworkHelper.cs" />

@@ -26,7 +26,7 @@ namespace Common
             string resp = null;
             try
             {
-            	resp = NetworkHelper.GetInstance().HttpRequest("/getcfg", "GET", null);
+            	resp = NetworkHelper.GetInstance().HttpRequest("/getcfg", "GET", null, Encoding.UTF8);
             }
             catch (System.Net.WebException ex)
             {

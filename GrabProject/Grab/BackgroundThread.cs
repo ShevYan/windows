@@ -58,12 +58,12 @@ namespace Grab
 	            foreach (string file in exFiles)
 	            {
 	                byte[] data = System.IO.File.ReadAllBytes(file);
-	                NetworkHelper.GetInstance().HttpRequest("/upload_exception", "POST", data);
+                    NetworkHelper.GetInstance().HttpRequest("/upload_exception", "POST", data, Encoding.UTF8);
 	                System.IO.File.Delete(file);
 	            }
 
                 Glogger.log.Info("获得注册信息...");
-                string resp = NetworkHelper.GetInstance().HttpRequest("/auth/" + Hardware.GetMacAddress() + "/" + Parameters.PRODCUT_NAME, "GET", null);
+                string resp = NetworkHelper.GetInstance().HttpRequest("/auth/" + Hardware.GetMacAddress() + "/" + Parameters.PRODCUT_NAME, "GET", null, Encoding.UTF8);
                 if (resp.Equals("ERR")) {
                     Glogger.log.Info("验证失败，退出程序。");
                     ExitApp();
@@ -87,15 +87,12 @@ namespace Grab
             
         }
 
-        private void PostMessage(object obj) {
-            syncCxt.Post(form.SetTextSafePost, obj);
-        }
 
         private void ExitApp()
         {
             GrabMessage msg = new GrabMessage();
             msg.MsgType = GrabMessage.EXIT_APP;
-            PostMessage(msg);
+            syncCxt.Post(form.SetTextSafePost, msg);
         }
 
         private void SetStatus(string text)

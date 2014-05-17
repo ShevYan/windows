@@ -1,0 +1,8 @@
+C:\windows_projects\windows\GrabProject\bin\GrabPublish\GrabPublish.exe
+C:\windows_projects\windows\GrabProject\bin\GrabPublish\GrabPublish.pdb
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.csprojResolveAssemblyReference.cache
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.Form1.resources
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.Properties.Resources.resources
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.csproj.GenerateResource.Cache
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.exe
+C:\windows_projects\windows\GrabProject\GrabPublish\obj\x86\Release\GrabPublish.pdb

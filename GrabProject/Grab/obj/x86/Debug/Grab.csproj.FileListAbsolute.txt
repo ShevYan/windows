@@ -24,3 +24,5 @@ C:\windows_projects\windows\GrabProject\Grab\obj\x86\Debug\Grab.csprojResolveAss
 C:\windows_projects\windows\GrabProject\Grab\obj\x86\Debug\Grab.GrabForm.resources
 C:\windows_projects\windows\GrabProject\bin\Grab\Log4Net.config
 C:\windows_projects\windows\GrabProject\Grab\obj\x86\Debug\Grab.OptionForm.resources
+C:\windows_projects\windows\GrabProject\Grab\obj\x86\Debug\Grab.csproj.ResolveComReference.cache
+C:\windows_projects\windows\GrabProject\Grab\obj\x86\Debug\Grab.PictureForm.resources
